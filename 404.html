@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  {{> head}}
+  <title>Сторінку не знайдено — Центр здоров’я «Стрекоза»</title>
+  <meta name="robots" content="noindex">
+</head>
+<body id="top">
+  {{> header}}
+  <main id="main" class="nf">
+    <section class="section" style="padding-top: 64px">
+      {{> pagehead crumbs="Головна / 404" text="Помилка 404"}}
+      <div class="wrap mt64 m-mt48"><div class="wordmark" aria-hidden="true"><span>[</span><span>404</span><span>]</span></div></div>
+      <div class="g mt96 m-mt48"><h1 class="h-xl ind" style="--c:2;--s:5">Такої сторінки немає</h1></div>
+      <div class="g mt32"><p class="lead" style="--c:4;--s:2;--mc:2;--ms:3">Можливо, посилання застаріло або сторінку перенесли. Почніть з головної або запишіться — адміністратор підкаже, куди звернутися.</p></div>
+      <div class="g mt32 btn-row">
+        <a class="btn" href="index.html"><span>На головну</span><span class="arr">→</span></a>
+        <a class="obtn ms_booking" href="{{booking}}"><span>Записатися</span><span class="arr">→</span></a>
+      </div>
+      <div class="g mt96 m-mt48"><nav class="brows" style="--c:2;--s:5" aria-label="Розділи сайту">
+        <a class="brow" href="index.html#directions"><span class="brow__k mono">01</span><span class="brow__v">Напрямки <span class="arr">→</span></span></a>
+        <a class="brow" href="index.html#tech"><span class="brow__k mono">02</span><span class="brow__v">Апарати <span class="arr">→</span></span></a>
+        <a class="brow" href="komanda.html"><span class="brow__k mono">03</span><span class="brow__v">Команда <span class="arr">→</span></span></a>
+        <a class="brow" href="#contacts"><span class="brow__k mono">04</span><span class="brow__v">Контакти <span class="arr">→</span></span></a>
+      </nav></div>
+    </section>
+  </main>
+  {{> footer}}
+</body>
+</html>

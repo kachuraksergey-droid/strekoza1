@@ -1,0 +1,10 @@
+<div class="price" data-reveal>
+  {{#each groups}}
+  <details{{#if open}} open{{/if}}>
+    <summary><span class="price__g">{{name}}</span><span class="price__n mono">{{this.count}}</span><span class="price__sign" aria-hidden="true"></span></summary>
+    {{#each rows}}
+    <div class="prow"><span class="prow__ix mono">{{ix}}</span><div class="prow__main"><div class="prow__nm">{{name}}</div>{{#if note}}<div class="prow__note">{{note}}</div>{{/if}}</div><span class="prow__dur mono">{{dur}}</span><span class="prow__pr">{{price}}</span></div>
+    {{/each}}
+  </details>
+  {{/each}}
+</div>

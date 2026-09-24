@@ -1,0 +1,23 @@
+<a class="sr-only" href="#main">Перейти до змісту</a>
+<header class="header">
+  <div class="g header__in">
+    <a class="logo" href="index.html" aria-label="Стрекоза — на головну"><img src="img/logo.webp" alt="Strekoza — центр здоров’я" width="122" height="44"></a>
+    <nav class="nav" aria-label="Головне меню">
+      <a href="index.html#directions"{{#if (eq active "directions")}} aria-current="page"{{/if}}>Напрямки</a>
+      <a href="index.html#tech"{{#if (eq active "tech")}} aria-current="page"{{/if}}>Апарати</a>
+      <a href="komanda.html"{{#if (eq active "team")}} aria-current="page"{{/if}}>Команда</a>
+      <a href="index.html#reviews">Відгуки</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+    <a class="btn header__cta ms_booking" href="{{booking}}"><span>Записатися</span><span class="arr">→</span></a>
+    <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="mmenu"><span></span><span></span></button>
+  </div>
+</header>
+<div class="mmenu" id="mmenu">
+  <a class="mmenu__link" href="index.html#directions"><span class="mono">01</span>Напрямки</a>
+  <a class="mmenu__link" href="index.html#tech"><span class="mono">02</span>Апарати</a>
+  <a class="mmenu__link" href="komanda.html"><span class="mono">03</span>Команда</a>
+  <a class="mmenu__link" href="index.html#reviews"><span class="mono">04</span>Відгуки</a>
+  <a class="mmenu__link" href="#contacts"><span class="mono">05</span>Контакти</a>
+  <a class="btn ms_booking" href="{{booking}}"><span>Записатися</span><span class="arr">→</span></a>
+</div>

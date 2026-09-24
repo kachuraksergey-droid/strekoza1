@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  {{> head}}
+  <title>Нігтьовий сервіс — манікюр, педикюр, нарощування | Центр здоров’я «Стрекоза», Трускавець</title>
+  <meta name="description" content="Манікюр, педикюр, нарощування та покриття в центрі здоров’я «Стрекоза» у Трускавці. 26 послуг, ціни та майстри. Запис: 067 174 78 68.">
+  <meta property="og:title" content="Нігтьовий сервіс — «Стрекоза», Трускавець">
+</head>
+<body id="top">
+  {{> header active="directions"}}
+  <main id="main">
+    <section class="section" style="padding-top: 64px">
+      {{> pagehead crumbs="Головна / Напрямки / 07" text="Напрямок 07 / 07"}}
+      <div class="g mt32"><h1 class="h-xl ind page-h1" style="--c:2;--s:5">Нігтьовий сервіс</h1></div>
+      <div class="g mt32"><p class="lead" style="--c:4;--s:2;--mc:2;--ms:3">Від класичного покриття до складного дизайну — працюємо акуратно, безпечно та з турботою про здоров’я нігтів.</p></div>
+      <div class="g mt32 btn-row">
+        <a class="btn ms_booking" href="{{booking}}"><span>Записатися до майстра</span><span class="arr">→</span></a>
+        <a class="obtn" href="#price"><span>Послуги та ціни</span><span class="arr">→</span></a>
+      </div>
+      <div class="g mt64 m-mt48"><div class="brows" style="--c:2;--s:5">
+        <div class="brow"><span class="brow__k mono">01</span><span class="brow__v">Індивідуальний підхід</span></div>
+        <div class="brow"><span class="brow__k mono">02</span><span class="brow__v">Досвідчені спеціалісти</span></div>
+        <div class="brow"><span class="brow__k mono">03</span><span class="brow__v">Стерильність та безпека</span></div>
+      </div></div>
+      <figure class="ph ph--wide mt160 m-mt64">{{{img "nail-room" "Кабінет нігтьового сервісу центру «Стрекоза»" "100vw" "" "center 42%" true}}}</figure>
+    </section>
+
+    <section class="section" id="price" aria-labelledby="price-h">
+      {{> label num="02" text="Послуги та ціни"}}
+      <div class="g mt32"><h2 class="h-xl ind" id="price-h" style="--c:3;--s:4">26 послуг нігтьового сервісу</h2></div>
+      <div class="g mt32"><p class="lead" style="--c:4;--s:2;--mc:2;--ms:3">Ціни вказані за одну послугу. Тривалість — орієнтовна, точний час майстер уточнить під час запису.</p></div>
+      <div class="g mt64">{{> prices groups=nailPrices}}</div>
+    </section>
+
+    <section class="section" id="masters" aria-labelledby="masters-h">
+      {{> label num="03" text="Майстри"}}
+      <div class="g mt32"><h2 class="h-xl ind" id="masters-h" style="--c:3;--s:4">Майстри нігтьового сервісу</h2></div>
+      <div class="g mt64 m-mt32 masters">
+        <a class="card" href="404.html" data-reveal><figure class="ph r-45">{{{img "team-dydyk" "Вероніка Дидик, майстер нігтьового сервісу" "(max-width: 767px) 50vw, 176px"}}}</figure><div class="card__name">Вероніка Дидик</div><div class="card__role">Майстер нігтьового сервісу</div></a>
+        <a class="card" href="404.html" data-reveal><figure class="ph r-45">{{{img "team-pyliak" "Анастасія Пиляк, майстер нігтьового сервісу" "(max-width: 767px) 50vw, 376px"}}}</figure><div class="card__name">Анастасія Пиляк</div><div class="card__role">Майстер нігтьового сервісу</div></a>
+        <a class="card" href="404.html" data-reveal><figure class="ph r-45">{{{img "team-andrusyk" "Каміла Андрусик, майстер нігтьового сервісу" "(max-width: 767px) 50vw, 176px"}}}</figure><div class="card__name">Каміла Андрусик</div><div class="card__role">Майстер нігтьового сервісу</div></a>
+      </div>
+      <div class="g mt32"><a class="obtn" href="komanda.html" style="--c:3;--s:2"><span>Уся команда</span><span class="arr">→</span></a></div>
+    </section>
+
+    {{> booking num="04" cta="Записатися до майстра"}}
+  </main>
+  {{> footer}}
+</body>
+</html>

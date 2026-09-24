@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  {{> head}}
+  <title>Команда — лікарі, косметологи та майстри | Центр здоров’я «Стрекоза», Трускавець</title>
+  <meta name="description" content="Дерматологи, косметологи, спеціалісти з лазерних технологій, естетисти та майстри нігтьового сервісу центру здоров’я «Стрекоза» в Трускавці.">
+  <meta property="og:title" content="Команда центру здоров’я «Стрекоза»">
+</head>
+<body id="top">
+  {{> header active="team"}}
+  <main id="main">
+    <section class="section" style="padding-top: 64px" aria-labelledby="team-h">
+      {{> pagehead crumbs="Головна / Команда" text=(concat "Команда · " (count team))}}
+      <div class="g mt32"><h1 class="h-xl ind" id="team-h" style="--c:2;--s:5">Дерматологи, косметологи та майстри нігтьового сервісу — усі під одним дахом.</h1></div>
+      <div class="g mt32"><p class="lead" style="--c:4;--s:2;--mc:2;--ms:3">Кожен спеціаліст працює у своєму напрямку, а складні випадки ми ведемо разом — від консультації лікаря до домашнього догляду.</p></div>
+      <div class="g mt64 m-mt48"><div class="tabs" data-filter="#people" role="group" aria-label="Фільтр за напрямком">
+        {{#each teamGroups}}<button class="tab" type="button" data-value="{{this}}" aria-pressed="{{#if @first}}true{{else}}false{{/if}}">[&nbsp;&nbsp;{{this}}&nbsp;<span class="mono">{{groupCount ../team this}}</span>&nbsp;]</button>{{/each}}
+      </div></div>
+      <div class="g mt64 m-mt32 cards" id="people">
+        {{#each team}}
+        <a class="card" href="404.html" data-group="{{group}}"><figure class="ph">{{{img this.img name "(max-width: 767px) 50vw, 176px"}}}</figure><div class="card__name">{{name}}</div><div class="card__role">{{role}}</div></a>
+        {{/each}}
+      </div>
+    </section>
+
+    <section class="section" id="booking" aria-labelledby="bk-h">
+      {{> label num="02" text="Запис до спеціаліста"}}
+      <div class="g mt32"><h2 class="h-xl ind" id="bk-h" style="--c:3;--s:4">Не знаєте, до кого записатися?</h2></div>
+      <div class="g mt32"><p class="lead" style="--c:4;--s:2;--mc:2;--ms:3">Опишіть свій запит адміністратору — ми підберемо спеціаліста й зручний час.</p></div>
+      <div class="g mt32"><a class="btn ms_booking" href="{{booking}}" style="--c:4;--s:2"><span>Записатися на консультацію</span><span class="arr">→</span></a></div>
+    </section>
+  </main>
+  {{> footer}}
+</body>
+</html>

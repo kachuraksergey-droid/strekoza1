@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  {{> head}}
+  <title>Центр здоров’я «Стрекоза» — дерматологія, косметологія, апаратні процедури в Трускавці</title>
+  <meta name="description" content="Лікарі-дерматологи, сучасні апарати та індивідуальні протоколи для обличчя, тіла й лазерних процедур. 16 років у Трускавці. Запис: 067 174 78 68.">
+  <meta property="og:title" content="Центр здоров’я «Стрекоза» — Трускавець">
+  <meta property="og:description" content="16 років турботи про вашу шкіру, здоров’я та красу.">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "Центр здоров’я «Стрекоза»",
+    "telephone": "+380671747868",
+    "address": { "@type": "PostalAddress", "streetAddress": "вул. Героїв УПА, 3", "addressLocality": "Трускавець", "addressCountry": "UA" },
+    "foundingDate": "2010",
+    "url": "https://strekozza.com.ua/"
+  }
+  </script>
+</head>
+<body id="top">
+  {{> header}}
+  <main id="main">
+
+    <!-- 01 Перший екран -->
+    <section class="section">
+      <div class="wrap mt64"><div class="wordmark" aria-hidden="true"><span>[</span><span>STREKOZA</span><span>]</span></div></div>
+      <div class="g mt32 m-mt32"><h1 class="h-xl ind" style="--c:2;--s:5">16 років турботи про вашу шкіру, здоров’я та красу</h1></div>
+      <div class="g mt32"><p class="lead" style="--c:4;--s:2;--mc:2;--ms:3">Лікарі-дерматологи, сучасні технології та індивідуальні протоколи для обличчя, тіла й лазерних процедур.</p></div>
+      <div class="g mt32 btn-row">
+        <a class="btn ms_booking" href="{{booking}}"><span>Записатися на консультацію</span><span class="arr">→</span></a>
+        <a class="obtn" href="#directions"><span>Підібрати процедуру</span><span class="arr">→</span></a>
+      </div>
+      <figure class="ph ph--wide mt64">{{{img "interior" "Інтер’єр центру «Стрекоза»: стіна з моху, вікна в сад" "100vw" "" "" true}}}</figure>
+    </section>
+
+    <!-- 02 Про центр -->
+    <section class="section" aria-label="Про центр">
+      {{> label num="02" text="Про центр"}}
+      <div class="g mt32"><p class="t-22 ind" style="--c:3;--s:4">Центр здоров’я «Стрекоза» — лікарі-дерматологи, сучасні технології та індивідуальні протоколи. Послідовність процедур, інтервали між ними й набір методик лікар визначає після консультації та оцінки стану шкіри.</p></div>
+      <div class="g mt64"><div class="brows" style="--c:2;--s:5" data-reveal>
+        <div class="brow"><span class="brow__k brow__k--big">16</span><span class="brow__v">Років успішної роботи</span></div>
+        <div class="brow"><span class="brow__k brow__k--big">20+</span><span class="brow__v">Років досвіду лікаря-дерматолога</span></div>
+        <div class="brow"><span class="brow__k brow__k--big">10 000+</span><span class="brow__v">Задоволених клієнтів</span></div>
+        <div class="brow"><span class="brow__k brow__k--big">30+</span><span class="brow__v">Апаратів преміум-класу</span></div>
+        <div class="brow"><span class="brow__k brow__k--big">5</span><span class="brow__v">Напрямків турботи про вас</span></div>
+      </div></div>
+    </section>
+
+    <!-- 03 Напрямки -->
+    <section class="section" id="directions" aria-labelledby="dir-h">
+      {{> label num="03" text="Напрямки"}}
+      <div class="g mt32"><h2 class="h-xl ind" id="dir-h" style="--c:3;--s:4">Як ми можемо вам допомогти</h2></div>
+      <div class="g mt32"><p class="lead" style="--c:4;--s:2;--mc:2;--ms:3">Напрямки догляду — від дерматологічної медицини до нігтьового сервісу. Оберіть свій, або запишіться на консультацію, і ми підберемо рішення разом.</p></div>
+
+      <div class="wrap mt64 only-d">
+        <div class="acc-row" data-acc>
+          {{#each directions}}
+          <a class="acc{{#if @first}} is-open{{/if}}" href="{{href}}">
+            <span class="acc__num mono">{{num}}</span>
+            <span class="acc__vert">{{name}}</span>
+            <span class="acc__open">
+              <span class="ph acc__ph">{{{img this.img name "600px" "" pos}}}</span>
+              <span class="acc__lbl mono">[&nbsp;&nbsp;{{num}} / 07&nbsp;&nbsp;]</span>
+              <span class="acc__name">{{name}}</span>
+              <span class="acc__desc">{{desc}}</span>
+              <span class="acc__go">Процедури напрямку <span class="arr">→</span></span>
+            </span>
+          </a>
+          {{/each}}
+        </div>
+      </div>
+      <div class="g mt16 only-d"><p class="mono muted" style="--c:1;--s:2">Наведіть на напрямок</p></div>
+      <div class="g mt32 only-d dir-help">
+        <div class="brows" style="--c:2;--s:5"><div class="brow"><span class="brow__k mono">?</span><span class="brow__v">Не знаєте, яка процедура вам підійде?</span></div></div>
+        <a class="ul dir-help__go ms_booking" href="{{booking}}" style="--c:7;--s:1">Записатися <span class="arr">→</span></a>
+      </div>
+
+      <div class="g mt32 only-m">
+        <div class="dir-list">
+          {{#each directions}}
+          <a class="dir-row" href="{{href}}">
+            <span class="mono">{{num}}</span>
+            <span class="dir-row__t"><span class="dir-row__n">{{name}}</span><span class="small">{{mdesc}}</span></span>
+            <span class="ph">{{{img this.img name "72px" "" "center"}}}</span>
+          </a>
+          {{/each}}
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 Апарати -->
+    <section class="section" id="tech" aria-labelledby="tech-h">
+      {{> label num="04" text="Технології"}}
+      <div class="g mt32"><h2 class="h-xl ind" id="tech-h" style="--c:3;--s:4">Наші апарати</h2></div>
+      <div class="g mt32"><p class="lead" style="--c:4;--s:2;--mc:2;--ms:3">Обладнання світового рівня від провідних виробників — від лазерної епіляції до діагностики шкіри.</p></div>
+      <div class="g mt96 m-mt32 tech">
+        <a class="card" href="404.html" data-reveal>
+          <figure class="ph ph--app r-11">{{{img "app-endoret" "Центрифуга ENDORET" "(max-width: 767px) 50vw, 176px"}}}</figure>
+          <div class="card__name">ENDORET</div><div class="card__role">Плазмотерапія</div><span class="more ul">Детальніше <span class="arr">→</span></span>
+        </a>
+        <a class="card" href="vivace.html" data-reveal>
+          <figure class="ph ph--app r-43">{{{img "app-vivace" "Апарат Vivace" "(max-width: 767px) 50vw, 576px"}}}</figure>
+          <div class="card__name">Vivace</div><div class="card__role">Мікроголковий RF ліфтинг</div><span class="more ul">Детальніше <span class="arr">→</span></span>
+        </a>
+        <a class="card" href="404.html" data-reveal>
+          <figure class="ph ph--app r-45">{{{img "app-alexstar" "Лазер AlexStar" "(max-width: 767px) 50vw, 176px"}}}</figure>
+          <div class="card__name">AlexStar</div><div class="card__role">Лазерна епіляція</div><span class="more ul">Детальніше <span class="arr">→</span></span>
+        </a>
+        <a class="card" href="404.html" data-reveal>
+          <figure class="ph ph--app r-11">{{{img "app-clearlight" "ClearLight IPL" "(max-width: 767px) 50vw, 176px"}}}</figure>
+          <div class="card__name">ClearLight IPL</div><div class="card__role">IPL терапія</div><span class="more ul">Детальніше <span class="arr">→</span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- 05 Бренди -->
+    <section class="section" aria-labelledby="brands-h">
+      {{> label num="05" text="Косметика"}}
+      <div class="g mt32"><h2 class="h-xl ind" id="brands-h" style="--c:3;--s:4">Працюємо з препаратами світових брендів</h2></div>
+      <div class="marq-wrap mt128 m-mt32">
+        <div class="marq">
+          {{#each brands}}<div class="marq__it{{#if caps}} marq__it--caps{{/if}}">{{#if this.img}}<img src="img/{{this.img}}" alt="{{alt}}" loading="lazy">{{else}}{{{text}}}{{/if}}</div>{{/each}}
+          {{#each brands}}<div class="marq__it{{#if caps}} marq__it--caps{{/if}}" aria-hidden="true">{{#if this.img}}<img src="img/{{this.img}}" alt="" loading="lazy">{{else}}{{{text}}}{{/if}}</div>{{/each}}
+        </div>
+      </div>
+    </section>
+
+    <!-- 06 Команда -->
+    <section class="section" id="team" aria-labelledby="team-h">
+      {{> label num="06" text="Наші лікарі та спеціалісти"}}
+      <div class="g mt32"><h2 class="h-xl ind" id="team-h" style="--c:3;--s:4">Дерматологи, косметологи та майстри нігтьового сервісу — усі під одним дахом.</h2></div>
+      <div class="g mt128 m-mt32 hteam">
+        <a class="card" href="404.html" data-reveal><figure class="ph r-45">{{{img "team-dydyk" "Вероніка Дидик, майстер нігтьового сервісу" "(max-width: 767px) 50vw, 176px"}}}</figure><div class="card__name">Вероніка Дидик</div><div class="card__role">Майстер нігтьового сервісу</div></a>
+        <a class="card" href="404.html" data-reveal><figure class="ph r-45">{{{img "team-andrusyk" "Каміла Андрусик, майстер нігтьового сервісу" "(max-width: 767px) 50vw, 176px"}}}</figure><div class="card__name">Каміла Андрусик</div><div class="card__role">Майстер нігтьового сервісу</div></a>
+        <a class="card" href="404.html" data-reveal><figure class="ph r-45">{{{img "team-shopiak" "Оксана Шоп’як, лікар дерматолог, дерматохірург" "(max-width: 767px) 50vw, 376px"}}}</figure><div class="card__name">Оксана Шоп’як</div><div class="card__role">Лікар дерматолог, дерматохірург</div></a>
+        <a class="card" href="404.html" data-reveal><figure class="ph r-45">{{{img "team-kovalchuk" "Ірина Ковальчук, косметолог" "(max-width: 767px) 50vw, 176px"}}}</figure><div class="card__name">Ірина Ковальчук</div><div class="card__role">Косметолог</div></a>
+        <a class="card" href="404.html" data-reveal><figure class="ph r-45">{{{img "team-pyliak" "Анастасія Пиляк, майстер нігтьового сервісу" "(max-width: 767px) 50vw, 176px"}}}</figure><div class="card__name">Анастасія Пиляк</div><div class="card__role">Майстер нігтьового сервісу</div></a>
+      </div>
+      <div class="g mt64 m-mt32"><a class="obtn obtn--sm" href="komanda.html" style="--c:3;--s:2"><span>Усі спеціалісти</span><span class="arr">→</span></a></div>
+    </section>
+
+    <!-- 07 Відгуки -->
+    <section class="section" id="reviews" aria-labelledby="rev-h" data-reviews>
+      <h2 class="sr-only" id="rev-h">Відгуки клієнтів</h2>
+      {{> label num="07" text="Відгуки клієнтів"}}
+      <div class="g mt32">
+        {{#each reviews}}<blockquote class="rev__q" data-slide="{{@index}}"{{#unless @first}} hidden{{/unless}}><span>«</span>{{quote}}<span>»</span></blockquote>{{/each}}
+      </div>
+      <div class="g mt64 m-mt32"><div class="rev__rule"></div></div>
+      <div class="g mt32 rev__row">
+        <div class="rev__rate"><div class="rev__big red">4.9 / 5</div><div class="rev__stars" aria-label="Оцінка 4.9 з 5">★★★★★</div></div>
+        {{#each reviews}}
+        <div class="rev__au" data-slide="{{@index}}"{{#unless @first}} hidden{{/unless}}><div class="rev__big">{{name}}</div><div class="mono muted mt16">{{tag}}</div></div>
+        <p class="rev__tx lead" data-slide="{{@index}}"{{#unless @first}} hidden{{/unless}}>{{text}}</p>
+        {{/each}}
+        <div class="rev__ct">
+          <div class="mono" style="font-weight: 500"><span data-rev-num>01</span> / {{count reviews}}</div>
+          <div class="rev__arrows">
+            <button class="obtn" type="button" aria-label="Попередній відгук" data-prev>←</button>
+            <button class="obtn" type="button" aria-label="Наступний відгук" data-next>→</button>
+          </div>
+        </div>
+        <a class="obtn obtn--sm rev__gb" href="{{google}}" target="_blank" rel="noopener"><span>Усі відгуки в Google</span><span class="arr">→</span></a>
+      </div>
+    </section>
+
+    <!-- 08 Запис -->
+    {{> booking num="08" photo=true}}
+  </main>
+  {{> footer}}
+</body>
+</html>

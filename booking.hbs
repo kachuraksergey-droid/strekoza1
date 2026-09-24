@@ -1,0 +1,11 @@
+<section class="section" id="booking" aria-labelledby="booking-h">
+  {{> label num=num text="Запис"}}
+  <div class="g mt32"><h2 class="h-xl ind" id="booking-h" style="--c:3;--s:4">Готові до змін? Запишіться сьогодні</h2></div>
+  <div class="g mt32"><p class="lead" style="--c:4;--s:2;--mc:2;--ms:3">Зателефонуйте або напишіть — адміністратор підбере зручний час і відповість на всі запитання.</p></div>
+  <div class="g mt64"><div class="brows" style="--c:2;--s:5">
+    <div class="brow"><span class="brow__k mono">Телефон</span><span class="brow__v"><a href="{{@root.phoneHref}}">{{@root.phone}}</a></span></div>
+    <div class="brow"><span class="brow__k mono">Адреса</span><span class="brow__v">{{@root.address}}</span></div>
+  </div></div>
+  <div class="g mt32"><a class="btn ms_booking" href="{{@root.booking}}" style="--c:4;--s:2"><span>{{#if cta}}{{cta}}{{else}}Записатися на консультацію{{/if}}</span><span class="arr">→</span></a></div>
+  {{#if photo}}<figure class="ph ph--wide mt160" data-reveal>{{{img "reception" "Рецепція центру «Стрекоза»" "100vw" "" "center"}}}</figure>{{/if}}
+</section>
